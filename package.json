@@ -1,0 +1,25 @@
+{
+  "name": "pact-exercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ctest": "mocha --timeout 15000 test/**/consumer.spec.js",
+    "ptest": "mocha --timeout 15000 test/**/provider.spec.js",
+    "push": "node test/publishPacts.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@pact-foundation/pact": "^5.3.0",
+    "@pact-foundation/pact-node": "^6.7.0",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^4.1.0",
+    "pact": "^4.3.1"
+  },
+  "dependencies": {
+    "superagent": "^3.8.2",
+    "supertest": "^3.0.0"
+  }
+}
